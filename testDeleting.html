@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTimeline</title>
+</head>
+<body>
+    <div id="myTimeline">
+        <div>New Item</div>
+    </div>
+    
+    <button onclick="myFunction()">insert DIV</button>
+    <script>
+        function myFunction()
+        {
+            var timeline=document.getElementById("myTimeline");
+            var timelineItem=document.createElement("div");
+            timelineItem.innerHTML="<img src='newitem'><textarea></textarea>";
+            
+            timeline.insertBefore(timelineItem, timeline.firstChild);
+            
+        }
+    </script>
+</body>
+</html>

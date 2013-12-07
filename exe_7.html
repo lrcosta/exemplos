@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 7</title>
+</head>
+<body>
+    <script>
+        //Não está funcionando.
+        var greet = function(person, greeting){
+            var text = greeting + ', ' + person;
+            return text;
+        };
+        //troquei console.log por document.write e funcionou
+        document.write(greet('Rebecca', 'Olá'));
+        /*
+        var foo = 1;
+        var bar = '5';
+        
+        document.write(foo + +bar);
+        alert('ola');*/
+        
+        for (var i=0; i<5; i++){
+            $('<p>click-me</p>').appendTo('body').click(function(){
+                alert(i);
+            });
+        }
+
+    </script>
+</body>
+</html>
